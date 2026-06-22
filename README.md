@@ -1,26 +1,41 @@
-# Codex Pets
+# Codex 桌宠合集
 
-This repository contains two ready-to-use Codex desktop pets:
+这个仓库保存了已经生成好的 Codex 桌宠文件，方便在其他电脑上直接下载使用，不需要重新生成。
 
-- `pets/yinyue`
-- `pets/Q版银月`
+## 包含的桌宠
 
-Each pet folder contains:
+- `pets/yinyue`：银月灵狐宠物版
+- `pets/Q版银月`：参考原图制作的人形 Q 版银月
 
-- `pet.json`
-- `spritesheet.webp`
+每个桌宠目录都包含两个必要文件：
 
-## Install
+- `pet.json`：桌宠配置
+- `spritesheet.webp`：桌宠动画图集
 
-Copy the pet folder you want into your Codex pets directory:
+## 使用方法
+
+下载或克隆本仓库后，把需要的桌宠目录复制到本机 Codex 的桌宠目录：
 
 ```powershell
 Copy-Item -Recurse -Force ".\pets\yinyue" "$env:USERPROFILE\.codex\pets\yinyue"
 Copy-Item -Recurse -Force ".\pets\Q版银月" "$env:USERPROFILE\.codex\pets\Q版银月"
 ```
 
-After copying, restart Codex or reload the pet list if needed.
+复制完成后，重启 Codex，或重新加载桌宠列表。
 
-## Notes
+## 目录结构
 
-These are generated desktop pet assets. They are stored here so they can be reused without regenerating the spritesheets.
+```text
+codex-pets/
+  pets/
+    yinyue/
+      pet.json
+      spritesheet.webp
+    Q版银月/
+      pet.json
+      spritesheet.webp
+```
+
+## 说明
+
+这些文件是已经生成完成的桌宠资源。仓库的目的只是保存和分发成品，避免在新电脑上重复生成。
